@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<input id="a" value="5" title="wadup"></input>
+<input id="b" value="5"  title="wadup"></input>
+
+<div id="multiply" onclick="multiply()">multiply</div>
+<div id="division" onclick="division()">division</div>
+<div id="add" onclick="add()">add</div>
+<div id="atn" onclick="atn()">atn</div>
+
+<div id="sum"></div>
+
+<script>
+
+var a = document.getElementById("a").value
+var b = document.getElementById("b").value;
+
+function multiply() {
+document.getElementById("sum").innerHTML = a *b;
+}
+function division() {
+document.getElementById("sum").innerHTML = a / b;
+}
+function add() {
+document.getElementById("sum").innerHTML = a + b;
+}
+function atn() {
+document.getElementById("sum").innerHTML = a - b
+}
+</script>
+
+</body>
+</html>
